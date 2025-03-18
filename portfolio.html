@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <a href="#" class="nav_logo">Portfolio</a>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#aboutMe" class="nav-link">About Me</a></li>
+                        <li class="nav-item"><a href="#works" class="nav-link">Works</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="burger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-img">
+                        <img src="images/DSCF0511.JPG" alt="Profile Picture">
+                    </div>
+                    <div class="hero-content">
+                        <h1>John Martin Cruz</h1>
+                        <p>Senior Software Developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="aboutMe" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-item">
+                        <div class="about-content">
+                            <h3>Who am I?</h3>
+                            <p>I am a Senior Software Developer at Cityland Incorporated with 5 years of experience in developing applications. </p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-content">
+                            <h3>What are my skills?</h3>
+                            <p>My skills include programming languages such as <b>Python</b>, <b>RPG/400</b> for backend and  <b>HTML5</b>, <b>CSS</b>, <b>JavaScript</b>, and <b>Vue.js</b> for front-end. I am also knowledgeable in using DB2 as databases. I am also familiar with using Git for version control.</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="about-content">
+                            <h3>What are my hobbies?</h3>
+                            <p>My hobbies include cycling, playing video games, watching movies/tv series, and listening to music.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="works">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Works</h2>
+                </div>
+                <div class="works-grid">
+                    <div class="works-item">
+                        <div class="works-content">
+                            <h3>Audit System</h3>
+                            <p>This web application processes check data by comparing it to the uploaded Excel file. Unfortunately, I can't show it here due to being a company property.</p>
+                        </div>
+                    </div>
+                    <div class="works-item">
+                        <div class="works-content">
+                            <h3>RPG/400 Programs</h3>
+                            <p>I develop and enhance programs written in RPG, primarily focusing on real estate tax systems. My work involves optimizing existing code and creating efficient solutions to streamline tax-related processes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main>
+
+        </main>
+        <footer>
+            <div class="container">
+                <div id="contact" class="footer-container">
+                    <div class="footer-section">
+                        <h3>Portfolio</h3>
+                        <p>My portfolio website showcasing my works and skills. I developed this using HTML5 and CSS.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <p>Email: jmccruz04@gmail.com</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Social Media</h3>
+                        <div class="social-media">
+                            <a href="#" class="social-link">FB</a>
+                            <a href="#" class="social-link">X</a>
+                            <a href="#" class="social-link">IG</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 John Martin Cruz</p>
+                </div>
+            </div>
+    </body>
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-menu');
+
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-item').forEach(n => n.addEventListener('click', () => {
+            burger.classList.remove('active');
+            nav.classList.remove('active');
+        }));
+    </script>
+</html>
